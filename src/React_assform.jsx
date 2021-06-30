@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class React_ass extends Component {
   constructor(props) {
     super(props);
@@ -8,8 +9,8 @@ class React_ass extends Component {
       FullName: "",
       Phonenumber: "",
       KinPhone: "",
-      radio1: "",
-      radio2: "",
+      Checkbox1: "",
+      Checkbox2: "",
       Location: "",
       School: "",
       Joincodetrain: "",
@@ -21,17 +22,17 @@ class React_ass extends Component {
     };
     this.Submit = (e) => {
       e.preventDefault();
-      console.log(this.state.firstname);
-      console.log(this.state.lastname);
-      console.log(this.state.email);
-      console.log(this.state.gender);
-      console.log(this.state.phonenumber);
-      console.log(this.state.radaio);
+      console.log(this.state.Email);
+      console.log(this.state.FullName);
+      console.log(this.state.Phonenumber);
+      console.log(this.state.KinPhone);
+      console.log(this.state.Checkbox1);
+      console.log(this.state.Checkbox2);
     };
   }
   render() {
     return (
-      <form onSubmit={this.Submit}>
+      <form >
         <div id="intro">
           <h1>Codetrain Registration Form</h1>
           <h4>
@@ -55,6 +56,7 @@ class React_ass extends Component {
             name="Email"
             onChange={this.handleChange}
             value={this.state.name}
+            placeholder="Your answer"
           />
         </div>
         <br />
@@ -69,6 +71,7 @@ class React_ass extends Component {
             name="Fullname"
             onChange={this.handleChange}
             value={this.state.name}
+            placeholder="Your answer"
           />
         </div>
         <br />
@@ -83,6 +86,7 @@ class React_ass extends Component {
             name="Phone number"
             onChange={this.handleChange}
             value={this.state.name}
+            placeholder="Your answer"
           />
         </div>
         <br />
@@ -95,9 +99,136 @@ class React_ass extends Component {
             name="phonenumber"
             onChange={this.handleChange}
             value={this.state.name}
+            placeholder="Your answer"
           />
         </div>
         <br />
+        <br />
+        <div className="fillings">
+          <div className="checkbox">
+            <label>
+              <b>
+                Can you pay 60% or more of the full Codetrain fees (GHS6000 for
+                Ghanaian applicants or $1,200 for international applicants)
+                <span>* </span>
+              </b>
+            </label>
+            <br />
+            <br />
+            <input
+              type="checkbox"
+              name="checkbox"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+            <p>True</p>
+            <input
+              type="checkbox"
+              name="checkbox"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+            <p>False</p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div className="fillings">
+          <div className="checkbox">
+            <label>
+              <b>
+                Please indicate who is going to pay your fees
+                <span>* </span>
+              </b>
+            </label>
+            <br />
+            <input
+              type="checkbox"
+              name="checkbox"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+            <p>Yourself</p>
+            <input
+              type="checkbox"
+              name="checkbox"
+              value={this.state.name}
+              placeholder="Your answer"
+              onChange={this.handleChange}
+            />
+            <p>Parent / Sponsor</p>
+            <input
+              type="checkbox"
+              name="checkbox"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+            <p>Organization</p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div className="fillings">
+          <label>
+            Location<span>*</span>
+          </label>
+          <br />
+          <input
+            type="text"
+            name="School"
+            onChange={this.handleChange}
+            value={this.state.name}
+            placeholder="Your answer"
+          />
+        </div>
+        <br />
+        <br />
+        <div className="fillings">
+          <label>
+            Current or previous school<span>*</span>
+          </label>
+          <br />
+          <input
+            type="text"
+            name="Locaion"
+            onChange={this.handleChange}
+            value={this.state.name}
+            placeholder="Your answer"
+          />
+        </div>
+        <br />
+        <br />
+        <div className="fillings">
+          <label>
+            Why do you want to join Codetrain<span>*</span>
+          </label>
+          <br />
+          <input
+            type="text"
+            name="Joincodetrain"
+            onChange={this.handleChange}
+            value={this.state.name}
+            placeholder="Your answer"
+          />
+        </div>
+        <br />
+        <br />
+        <div className="fillings">
+          <label>
+            How did you hear about Codetrain ?<span>*</span>
+          </label>
+          <br />
+          <input
+            type="text"
+            name="Aboutcodetrain"
+            onChange={this.handleChange}
+            value={this.state.name}
+            placeholder="Your answer"
+          />
+        </div>
+        <br />
+        <br />
+        <button onClick={this.handleSubmit} type="submit">Submit</button>
       </form>
     );
   }
