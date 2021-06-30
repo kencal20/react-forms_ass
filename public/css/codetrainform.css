@@ -41,3 +41,8 @@ button {
   width: 9%;
   height: 5vh;
 }
+
+progress {
+  margin-left: 400px;
+background: chartreuse;
+}
