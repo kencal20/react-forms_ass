@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class React_ass extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +31,7 @@ class React_ass extends Component {
   }
   render() {
     return (
-      <form >
+      <form>
         <div id="intro">
           <h1>Codetrain Registration Form</h1>
           <h4>
@@ -228,7 +227,10 @@ class React_ass extends Component {
         </div>
         <br />
         <br />
-        <button onClick={this.handleSubmit} type="submit">Submit</button>
+        <button onClick={this.handleSubmit} type="submit">
+          Submit
+        </button>
+        <progress value="bar" max="6" />
       </form>
     );
   }
