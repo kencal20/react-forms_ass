@@ -84,8 +84,6 @@ class React_ass extends Component {
             onChange={this.handleChange}
             value={this.state.name}
           />
-          <br />
-          <br />
         </div>
         <br />
         <br />
@@ -100,8 +98,6 @@ class React_ass extends Component {
           />
         </div>
         <br />
- 
-      
       </form>
     );
   }
