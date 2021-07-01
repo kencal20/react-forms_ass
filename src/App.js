@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import React_ass from "./React_assform";
+import Reactass from "./Reactassform";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <React_ass />
+        <Reactass />
       </div>
     );
   }
