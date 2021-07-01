@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class React_ass extends Component {
   constructor(props) {
     super(props);
@@ -231,9 +230,7 @@ class React_ass extends Component {
         <button onClick={this.handleSubmit} type="submit">
           Submit
         </button>
-        <div className="Progress">
-     
-        </div>
+        <div className="Progress"></div>
       </form>
     );
   }
