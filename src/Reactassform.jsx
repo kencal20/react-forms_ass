@@ -44,7 +44,7 @@ class Reactass extends Component {
         Joincodetrain: "",
         Aboutcodetrain: "",
       });
-    }
+    };
   }
   render() {
     return (
